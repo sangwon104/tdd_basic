@@ -1,6 +1,12 @@
 package org.example;
 public class Main {
     public static void main(String[] args) {
+
+        if (args.length == 0) {
+            System.out.println("입력된 값이 없습니다.");
+            return;
+        }
+
         double[] inputs = new double[args.length];
 
         for (int i = 0; i < inputs.length; i++) {

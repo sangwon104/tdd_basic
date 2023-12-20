@@ -5,6 +5,9 @@ public class Main {
         if (args.length == 0) {
             System.out.println("입력된 값이 없습니다.");
             return;
+        } else if (args.length == 1) {
+            System.out.println("2개 이상의 값을 입력해주세요.");
+            return;
         }
 
         double[] inputs = new double[args.length];
